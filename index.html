@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PulseFit — Fitness & Wellness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo"><div class="dot"></div>PulseFit</div>
+
+      <input id="menu" class="menu-toggle" type="checkbox">
+      <label for="menu" class="burger" style="cursor:pointer;padding:8px;border-radius:10px;background:var(--card)">☰</label>
+
+      <nav>
+        <a href="#programs">Programs</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="card hero-left">
+        <h1>Train smarter. Live stronger.</h1>
+        <p>Personalized workout plans, hybrid classes, nutrition guidance, and coaching that fits your life. No fads — just results.</p>
+
+        <div class="cta-row">
+          <button class="btn">Get started</button>
+          <button class="btn alt">See plans</button>
+        </div>
+
+        <div class="features" aria-hidden="false" style="margin-top:22px">
+          <div class="feature">
+            <div style="font-weight:800;font-size:20px">95%</div>
+            <h4>Success rate</h4>
+            <p>Clients reach their milestone within 12 weeks.</p>
+          </div>
+
+          <div class="feature">
+            <div style="font-weight:800;font-size:20px">50+</div>
+            <h4>Live classes</h4>
+            <p>Weekly strength, HIIT, and yoga sessions.</p>
+          </div>
+
+          <div class="feature">
+            <div style="font-weight:800;font-size:20px">Nutrition</div>
+            <h4>Meal plans</h4>
+            <p>Balanced plans tailored to goals and allergies.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card signup-hero">
+        <h3 style="margin:0 0 8px 0">Start your free trial</h3>
+        <p style="margin:0 0 14px;color:var(--muted);font-size:14px">No credit card required — cancel any time.</p>
+
+        <div class="stat"><span style="color:var(--muted)">Active members</span><strong>1,872</strong></div>
+        <div class="stat"><span style="color:var(--muted)">Avg. weekly classes</span><strong>12</strong></div>
+
+        <form aria-label="signup" style="margin-top:10px">
+          <div class="form-row">
+            <input type="text" placeholder="Your name" aria-label="name">
+            <input type="email" placeholder="Email address" aria-label="email">
+          </div>
+          <div style="display:flex;margin-top:12px;gap:8px">
+            <button class="btn" type="submit">Start free</button>
+            <button class="btn alt" type="button">Schedule call</button>
+          </div>
+        </form>
+
+        <p style="font-size:12px;color:var(--muted);margin-top:12px">Trusted by busy people — programs for all levels.</p>
+      </aside>
+    </main>
+
+    <section id="programs" class="card">
+      <h2 style="margin-top:0">Programs</h2>
+      <p style="color:var(--muted);margin-top:6px">Choose a path that fits your life. All programs include progress tracking and weekly check-ins.</p>
+
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card">
+          <h3>Strength Builder</h3>
+          <p style="color:var(--muted)">4-week progressive strength plan — beginner to advanced.</p>
+          <ul style="margin:12px 0 0 18px;color:var(--muted)">
+            <li>3 resistance sessions / week</li>
+            <li>Technique videos</li>
+            <li>Customized deload weeks</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>HIIT & Conditioning</h3>
+          <p style="color:var(--muted)">Short, intense sessions that improve stamina and burn fat.</p>
+          <ul style="margin:12px 0 0 18px;color:var(--muted)">
+            <li>30–40 minute circuits</li>
+            <li>Weekly mobility work</li>
+            <li>Optional live classes</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Mindful Movement</h3>
+          <p style="color:var(--muted)">Yoga and mobility-focused plans for recovery and flexibility.</p>
+          <ul style="margin:12px 0 0 18px;color:var(--muted)">
+            <li>Daily mobility routines</li>
+            <li>Breathwork & short meditations</li>
+            <li>Recovery coaching</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="trainers">
+      <h2 style="margin:6px 0">Trainers</h2>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="trainer card">
+          <div class="avatar">AK</div>
+          <div>
+            <strong>Aarya K.</strong>
+            <div style="color:var(--muted);font-size:13px">Strength Coach • 8 yrs experience</div>
+          </div>
+        </div>
+
+        <div class="trainer card">
+          <div class="avatar">RM</div>
+          <div>
+            <strong>Rohit M.</strong>
+            <div style="color:var(--muted);font-size:13px">HIIT Specialist • Marathoner</div>
+          </div>
+        </div>
+
+        <div class="trainer card">
+          <div class="avatar">SL</div>
+          <div>
+            <strong>Sana L.</strong>
+            <div style="color:var(--muted);font-size:13px">Yoga & Mobility • Physiotherapy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="card">
+      <h2 style="margin-top:0">Pricing</h2>
+      <p style="color:var(--muted);margin-top:6px">Simple, all-inclusive plans — cancel or change anytime.</p>
+
+      <div class="pricing" style="margin-top:14px">
+        <div class="price-card">
+          <div style="font-weight:700">Monthly</div>
+          <div class="price">₹1,499</div>
+          <div style="color:var(--muted);margin-top:8px">Unlimited access to classes + community chat</div>
+        </div>
+
+        <div class="price-card" style="border:2px solid rgba(96,165,250,0.16);transform:translateY(-6px)">
+          <div style="font-weight:700">Most popular</div>
+          <div class="price">₹3,999 / 3 mo</div>
+          <div style="color:var(--muted);margin-top:8px">Save 15% — includes 1 free coaching call</div>
+        </div>
+
+        <div class="price-card">
+          <div style="font-weight:700">Annual</div>
+          <div class="price">₹11,999</div>
+          <div style="color:var(--muted);margin-top:8px">Best value — 2 free coaching calls</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2 style="margin:6px 0">What members say</h2>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="testimonial card">
+          <strong>"I dropped 10kg in 10 weeks and still feel strong."</strong>
+          <p style="color:var(--muted);margin-top:8px">— Priya, 28</p>
+        </div>
+        <div class="testimonial card">
+          <strong>"The trainers actually listen and adapt my plan."</strong>
+          <p style="color:var(--muted);margin-top:8px">— Aman, 33</p>
+        </div>
+        <div class="testimonial card">
+          <strong>"Great for busy schedules — workouts are efficient."</strong>
+          <p style="color:var(--muted);margin-top:8px">— Meera, 24</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <strong>PulseFit</strong>
+        <div style="color:var(--muted);font-size:13px">Built with ❤ — fitness for real life</div>
+      </div>
+      <div style="color:var(--muted);font-size:13px">© <span id="year">2025</span> PulseFit</div>
+    </footer>
+  </div>
+</body>
+</html>
